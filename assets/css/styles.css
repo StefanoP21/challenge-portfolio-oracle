@@ -307,6 +307,7 @@ img {
 
 .home__blob-img {
     width: 170px;
+    height: auto;
 }
 
 .home__data {
@@ -841,6 +842,14 @@ img {
     justify-self: center;
 }
 
+.portfolio__data {
+    background-color: var(--container-color);
+    padding: 1rem;
+    border-radius: .5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .15);
+    text-align: center;
+}
+
 .portfolio__title {
     font-size: var(--h3-font-size);
     margin-bottom: var(--mb-0-5);
@@ -1186,7 +1195,7 @@ img {
     }
 
     .about__container,
-    .skills__container,
+
     .hobbies__container,
     .portfolio__content,
     .project__container,
@@ -1195,10 +1204,18 @@ img {
         grid-template-columns: repeat(2, 1fr);
     }
 
+    .skills__container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
     .qualification__sections {
         display: grid;
         grid-template-columns: .6fr;
         justify-content: center;
+    }
+
+    .portfolio__data {
+        text-align: left;
     }
 }
 
