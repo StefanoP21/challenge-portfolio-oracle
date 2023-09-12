@@ -1189,9 +1189,14 @@ img {
     .hobbies__container,
     .portfolio__content,
     .project__container,
-    .contact__container,
     .footer__container {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contact__container {
+        grid-template-columns: repeat(3, 1fr);
+        display: flex;
+        justify-content: space-around;
     }
 
     .skills__container {
